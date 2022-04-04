@@ -1,0 +1,64 @@
+def hour():
+    hours = int(input("Enter Hours: "))
+    second= hours * 3600
+    print(f"the second for {hours} hour is {second} second.")
+
+
+hour()
+
+
+
+num = int(input("Enter A number: "))
+
+
+
+def hr_min_to_sec(hrs,minutes):
+
+    hr_to_sec = hrs * 3600
+    mins_to_sec = minutes * 60
+    return hr_to_sec,mins_to_sec
+
+obj = hr_min_to_sec(11,25)
+print("here is the result ", obj )
+
+
+# short way to get input list from user
+
+ele = input("enter list input seperated by space: ")
+lst = ele.split()
+print(lst)
+
+# have to practice on it
+
+for i in lst:
+    prev = 0
+    curr = lst[0]
+    if prev < curr :
+        prev = curr
+    maxi = curr
+
+print(maxi)
+
+# recursion 
+def repeat_string(strng, n):
+   i=0
+   for i in range(n):
+       print(strng)
+       i += 1
+   return "Else."
+print(repeat_string("Anushka", 5))
+
+# bank
+
+program = input("enter the program: ")
+lis = program.split(" ")
+balance = 0
+for i in range(len(lis)-1):
+  if lis[i] == 'D':
+    balance += int(lis[i+1])
+  elif lis[i] == 'W':
+    balance -= int(lis[i+1])
+
+print(balance)
+
+
